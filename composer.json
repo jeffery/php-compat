@@ -1,4 +1,10 @@
 {
     "name": "ivt/php-compat",
-    "require": {}
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "classmap": [""]
+    },
+    "require": {
+    }
 }
