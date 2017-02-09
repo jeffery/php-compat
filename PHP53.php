@@ -2,7 +2,9 @@
 
 namespace IVT;
 
+/** @deprecated This code is intended for transition only. */
 final class PHP53 {
+    /** @deprecated This code is intended for transition only. */
     public static function htmlentities(
         $string,
         $flags = \ENT_COMPAT, // Documented as ENT_COMPAT | ENT_HTML401, but ENT_HTML401 is 0
@@ -12,6 +14,7 @@ final class PHP53 {
         return \htmlentities($string, $flags, $encoding, $double_encode);
     }
 
+    /** @deprecated This code is intended for transition only. */
     public static function html_entity_decode(
         $string,
         $flags = \ENT_COMPAT, // Documented as ENT_COMPAT | ENT_HTML401, but ENT_HTML401 is 0
@@ -20,6 +23,7 @@ final class PHP53 {
         return \html_entity_decode($string, $flags, $encoding);
     }
 
+    /** @deprecated This code is intended for transition only. */
     public static function htmlspecialchars(
         $string,
         $flags = \ENT_COMPAT, // Documented as ENT_COMPAT | ENT_HTML401, but ENT_HTML401 is 0
@@ -29,6 +33,7 @@ final class PHP53 {
         return \htmlspecialchars($string, $flags, $encoding, $double_encode);
     }
 
+    /** @deprecated This code is intended for transition only. */
     public static function HTTP_RAW_POST_DATA() {
         global $HTTP_RAW_POST_DATA;
         // If "always_populate_raw_post_data = 1" in the INI file on PHP < 7.0, this
